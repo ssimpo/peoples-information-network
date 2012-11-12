@@ -1,0 +1,11 @@
+{
+	"type":"magazine",
+	"cols":2,
+	"rows":2,
+	"feeds":[{
+		"type":"rss",
+		"src":"http://www.redcar-cleveland.gov.uk/tunedin.nsf/magazine.xml",
+		"settings":{
+		}
+	}]
+}
