@@ -1,0 +1,10 @@
+syntax: glob
+.svn/
+scripts/dijit/
+scripts/dojo/
+scripts/dojox/
+scripts/release/
+scripts/simpo/
+scripts/lib
+scripts/rcbc/
+scripts/util/
