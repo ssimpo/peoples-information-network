@@ -1,7 +1,4 @@
 syntax: glob
 .svn/
-scripts/dijit/
-scripts/dojo/
-scripts/dojox/
 scripts/release/
 scripts/util/
