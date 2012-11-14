@@ -1,0 +1,16 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Compile LESS", 
+  "language": "JavaScript", 
+  "trigger_enabled": 0, 
+  "value": [
+    "if (extensions.less) {", 
+    "    extensions.less.compileCompressFile();", 
+    "}"
+  ], 
+  "trigger": "trigger_postsave", 
+  "rank": 100, 
+  "version": "1.0.7", 
+  "async": 1, 
+  "type": "macro"
+}
