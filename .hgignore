@@ -2,3 +2,6 @@ syntax: glob
 .svn/
 scripts/release/
 scripts/util/
+scripts/dojo
+scripts/dojox
+scripts/dijit

@@ -1,6 +1,3 @@
 scripts/rcbc = https://bitbucket.org/ssimpo/dojo-rcbc
 scripts/lib = https://bitbucket.org/ssimpo/dojo-lib
 scripts/simpo = https://bitbucket.org/ssimpo/dojo-simpo
-scripts/dojo = https://svn.dojotoolkit.org/src/branches/1.8/dojo
-scripts/dojox = https://svn.dojotoolkit.org/src/branches/1.8/dojox
-scripts/dijit = https://svn.dojotoolkit.org/src/branches/1.8/dijit
