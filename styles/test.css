@@ -1,3 +1,4 @@
+@import url("../scripts/rcbc/dijit/themes/claro/claro.css?v=1");
 @charset "utf-8";
 @font-face{font-family:'dunkin';src:url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.eot');src:url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.eot?#iefix') format('embedded-opentype'),url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.woff') format('woff'),url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.ttf') format('truetype'),url('/pin.nsf/fonts/dunkin_sans-webfont.svg') format('svg');font-weight:normal;font-style:normal;}html{height:100%;}
 body{margin:0px 0px 0px 5px;padding:0px;text-align:left;background-color:#efefef;font-family:Tahoma,sans-serif;height:100%;}
@@ -53,23 +54,5 @@ table.standard th,table.standard td{text-align:left;font-size:0.9em;vertical-ali
 .p70{width:70% !important;}
 .p80{width:80% !important;}
 .p90{width:90% !important;}
-.rcbcAgeRangeHiddenDiv{visibility:hidden;position:absolute;left:0px;top:0px;height:0px;width:0px;}
 table.standard{width:96%;}
-.rcbcAgeRangeTable{width:95%;}.rcbcAgeRangeTable .rcbcAgeRangeCell{vertical-align:top;}
-.rcbcAgeRangeTable .rcbcAgeRangeSelectorTh{vertical-align:top;font-weight:normal;}.rcbcAgeRangeTable .rcbcAgeRangeSelectorTh .rcbcAgeRangeSelector{width:200px;}
-.rcbcAgeRangeTable .rcbcAgeRangeAgeSpinner{width:50px;}
-.dojoDijitHelperTooltip{width:200px;background-color:#ccddff;font-size:0.9em;padding:5px;margin:0px;}.dojoDijitHelperTooltip .label{color:#0000ff;}
-.dojoDijitErrorTooltip{width:200px;background-color:#ffcccc;font-size:0.9em;padding:5px;margin:0px;}.dojoDijitErrorTooltip .label{color:#ff0000;}
-.dojoDijitMissingTooltip{width:200px;background-color:#ffcc99;font-size:0.9em;padding:5px;margin:0px;}.dojoDijitMissingTooltip .label{color:#333333;}
-.dojoDijitInfoTooltip{width:200px;background-color:#ddffdd;font-size:0.9em;padding:5px;margin:0px;}.dojoDijitInfoTooltip .label{color:#009900;}
-.dojoDijitInfoTooltip table{border-collapse:collapse;}.dojoDijitInfoTooltip table td,.dojoDijitInfoTooltip table th{vertical-align:top;padding:3px;}
-.dojoDijitInfoTooltip table .r{border-right:1px solid #009900;}
-.dojoDijitInfoTooltip table .l{border-left:1px solid #009900;}
-.dojoDijitInfoTooltip table .b{border-bottom:1px solid #009900;}
-.dojoDijitInfoTooltip table .t{border-top:1px solid #009900;}
-.rcbcCheckWithHiddenDiv{visibility:hidden;position:absolute;left:0px;top:0px;height:1px;width:1px;overflow:hidden;}
-.rcbcCheckWithDetailsRow{height:27px;}
-div.dojoRcbcDijitLinkedIdListItem:hover{cursor:pointer;}
 hr{border:none;height:5px;width:96%;background-image:url("/pin.nsf/dotted-line.gif");background-position:left bottom;background-repeat:repeat-x;}
-.dojoRcbcDijitDialog{width:50%;}.dojoRcbcDijitDialog .dojoRcbcDijitDialogFeedback{background-color:#ccffcc;font-size:0.9em;padding:5px;margin:0px;text-align:center;}
-.dojoRcbcDijitDialog .dojoRcbcDijitDialogError{background-color:#ffcccc;font-size:0.9em;padding:5px;margin:0px;text-align:center;}
