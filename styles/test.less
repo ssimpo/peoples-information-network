@@ -22,12 +22,26 @@
 @pink: #ee499b;
 @green: #bcd411;
 
+@turquoise: #02a5ac;
+@orange: #ff7f00;
+@lightBlue: #ceecf4;
+@yellow: #ffcc00;
+@red: #ff1400;
+@blue: #008cfb;
+@purple: #6a4588;
+
 @padding1: 10px;
 @mainWidth: 956px;
 @menuWidth: 275px-@padding1;
 @p75: 513px;
 @fontType1: Tahoma, sans-serif;
 @fontType2: "dunkin", @fontType1;
+
+.zeroSurounds {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 
 .ROUNDED-CORNERS-TOP (@radius: 5px) {
   border-top-left-radius: @radius;
@@ -184,11 +198,57 @@ body > div > article {
     padding: @padding1;
     
     aside {
-        width: 20%;
+        width: 25%;
         float: left;
         padding-right: @padding1;
         height: auto;
         display: block;
+        
+        ul.sideMenu {
+            .zeroSurounds;
+            list-style: none;
+            
+            li {
+                .zeroSurounds;
+            }
+            
+            a {
+                font-size: 1.1em;
+                display: block;
+                padding: 2px 0px 0px 10px;
+                width: 100%;
+                height:29px;
+                text-decoration: none;
+                margin: 0px 0px 8px 8px;
+                color: @white;
+            }
+            
+            a:hover {
+                text-decoration:underline
+            }
+            
+            li.turquois a {
+                background-color: @turquoise;
+            }
+            li.orange a {
+                background-color: @orange;
+            }
+            li.lightBlue a {
+                background-color: @lightBlue;
+            }
+            li.yellow a {
+                background-color: @yellow;
+            }
+            li.red a {
+                background-color: @red;
+            }
+            li.blue a {
+                background-color: @blue;
+            }
+            li.purple a {
+                background-color: @purple;
+            }
+        }
     }
     
     table.standard {
@@ -208,8 +268,13 @@ body > div > article {
     }
     
     .articleContent{
-        width: 75%;
+        font-size: 1.0em;
+        width: 70%;
         float: right;
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: @pink;
+        }
         
         h1 {
             font-size: 1.2em;
@@ -217,6 +282,10 @@ body > div > article {
     
         h2 {
             font-size: 1.1em;
+        }
+        
+        h3 {
+            font-size: 1.0em;
         }
     
         .indent {
@@ -366,10 +435,30 @@ a.mainfooter:hover{
 }
 
 table.standard {
+    width: 96%;
+    border-collapse: collapse;
+     
     th, td {
         text-align: left;
         font-size: 0.9em;
         vertical-align: top;
+        padding: @padding1/3;
+    }
+    
+    td.l, th.l {
+        border-left: 1px solid @grey4
+    }
+    
+    td.t, th.t {
+        border-top: 1px solid @grey4
+    }
+    
+    td.r, th.r {
+        border-right: 1px solid @grey4
+    }
+    
+    td.b, th.b {
+        border-bottom: 1px solid @grey4
     }
 }
 
@@ -382,12 +471,6 @@ table.standard {
 .p70 { width:70% !important; }
 .p80 { width:80% !important; }
 .p90 { width:90% !important; }
-
-
-table.standard {
-    width: 96%;
-}
-
 
 hr {
     border: none;
