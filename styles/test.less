@@ -54,6 +54,7 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -63,6 +64,7 @@ body {
     background-color: @grey1;
     font-family:  @fontType1;
     height: 100%;
+    width: 100%;
 }
 
 h1 {
@@ -118,18 +120,18 @@ body > div > header{
                 }
                 
                 .dijitButtonNode, .dijitButtonNode:hover {
-                    background-image: none;
-                    color: @white;
-                    font-weight: bold;
-                    border: 2px solid darken(@pink,20%);
+                    background-image: none !important;
+                    color: @white !important;
+                    font-weight: bold !important;
+                    border: 2px solid darken(@pink,20%) !important;
                 }
                 
                 .dijitButtonNode {
-                    background: darken(@pink,10%);
+                    background: darken(@pink,10%) !important;
                 }
                 
                 .dijitButtonNode:hover {
-                    background: @pink;
+                    background: @pink !important;
                 }
                 
             }
@@ -174,29 +176,19 @@ body > div > header{
 }
 
 body > div > article {
+    height: auto;
     clear: both;
-    aside {
-        width: @menuWidth;
-        float: left;
-        height: 800px;
-        padding-right: @padding1;
-    }
-    
     background-image: url("/pin.nsf/dotted-line.gif");
     background-position: left bottom;
     background-repeat: repeat-x;
     padding: @padding1;
     
-    h1 {
-        font-size: 1.2em;
-    }
-    
-    h2 {
-        font-size: 1.1em;
-    }
-    
-    .indent {
-        margin-left: @padding1*2;
+    aside {
+        width: 20%;
+        float: left;
+        padding-right: @padding1;
+        height: auto;
+        display: block;
     }
     
     table.standard {
@@ -212,6 +204,23 @@ body > div > article {
         
         thead tr th, thead tr td {
             vertical-align: bottom;
+        }
+    }
+    
+    .articleContent{
+        width: 75%;
+        float: right;
+        
+        h1 {
+            font-size: 1.2em;
+        }
+    
+        h2 {
+            font-size: 1.1em;
+        }
+    
+        .indent {
+            margin-left: @padding1*2;
         }
     }
     
