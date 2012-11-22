@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'dunkin';
+    src: url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.eot');
+    src: url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.eot?#iefix') format('embedded-opentype'), url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.woff') format('woff'), url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.ttf') format('truetype'), url('/pin.nsf/fonts/dunkin_sans-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@grey1: #efefef;
+@grey2: #dddddd;
+@grey3: #eaeaea;
+@grey4: #c0c0c0;
+
+@white: #ffffff;
+@black: #000000;
+
+@pink: #ee499b;
+@green: #bcd411;
+
+@padding1: 10px;
+@mainWidth: 956px;
+@menuWidth: 275px-@padding1;
+@p75: 513px;
+@fontType1: Tahoma, sans-serif;
+@fontType2: "dunkin", @fontType1;
+
+.ROUNDED-CORNERS-TOP (@radius: 5px) {
+  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+  -webkit-border-top-left-radius: @radius;
+  -webkit-border-top-right-radius: @radius;
+  -moz-border-radius-topleft: @radius;
+  -moz-border-radius-topright: @radius;
+}
+
+.ROUNDED-CORNERS-BOTTOM (@radius: 5px) {
+  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+  -moz-border-radius-bottomleft: @radius;
+  -moz-border-radius-bottomright: @radius;
+}
+
+.ROUNDED-CORNERS (@radius: 5px) {
+    .ROUNDED-CORNERS-TOP(@radius);
+    .ROUNDED-CORNERS-BOTTOM(@radius);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px 0px 0px @padding1/2;
+    padding: 0px;
+    text-align: left;
+    background-color: @grey1;
+    font-family:  @fontType1;
+    height: 100%;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+.main {
+    width: @mainWidth;
+    margin: @padding1 auto @padding1;
+    text-align: left;
+    overflow: visible;
+    height: auto;
+    background-color: @white;
+}
+
+body > div > header{
+    clear: both;
+    width: @mainWidth;
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: @white;
+    
+    background-image: url("/pin.nsf/dotted-line.gif");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    
+    .logo {
+        float: left;
+    }
+    
+    .col2 {
+        float:right;
+        width:644px;
+        text-align: center;
+        
+        form {
+            background-color: @grey1;
+            padding: @padding1;
+            margin: @padding1*2;
+            .ROUNDED-CORNERS(@padding1*3);
+            
+            fieldset {
+                background-color: @grey3;
+                border: none;
+                padding: @padding1*2 @padding1/2 @padding1*2 @padding1/2;
+                .ROUNDED-CORNERS(@padding1*3);
+                
+                .dijitTextBox {
+                    width: 200px;
+                    height: 25px;
+                    border: 2px solid @pink;
+                }
+                
+                .dijitButtonNode, .dijitButtonNode:hover {
+                    background-image: none;
+                    color: @white;
+                    font-weight: bold;
+                    border: 2px solid darken(@pink,20%);
+                }
+                
+                .dijitButtonNode {
+                    background: darken(@pink,10%);
+                }
+                
+                .dijitButtonNode:hover {
+                    background: @pink;
+                }
+                
+            }
+        }
+    }
+
+    /*****************************Tabs********************************/
+
+    .TAB (@colour: @pink){
+        float: left;
+        .ROUNDED-CORNERS-TOP(@padding1*3);
+        padding: @padding1 @padding1*2 0px @padding1*2;
+        height: 38px;
+        font: 1.4em @fontType2;
+        letter-spacing: 1px;
+        color: @white;
+        text-align: center;
+        margin-right: 2px;
+        text-decoration: none;
+        background-color: @colour;
+    }
+    
+    .tabs {
+        float: left;
+        clear: both;
+        padding-top: @padding1;
+        text-transform: uppercase;
+        padding-left: @padding1;
+
+        .adults-on { .TAB(@pink); }
+        .adults { .TAB(@pink); }
+        .adults:hover { .TAB(@grey4); }
+
+        .families-on { .TAB(@green); }
+        .families { .TAB(@green); }
+        .families:hover { .TAB(@grey4); }
+
+        .shortlist-on { .TAB(@grey2); }
+        .shortlist { .TAB(@grey2);}
+        .shortlist:hover { .TAB(@grey4); }
+    }
+}
+
+body > div > article {
+    clear: both;
+    aside {
+        width: @menuWidth;
+        float: left;
+        height: 800px;
+        padding-right: @padding1;
+    }
+    
+    background-image: url("/pin.nsf/dotted-line.gif");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding: @padding1;
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    h2 {
+        font-size: 1.1em;
+    }
+    
+    .indent {
+        margin-left: @padding1*2;
+    }
+    
+    table.standard {
+        width: 96%;
+        
+        th, td {
+            vertical-align: top;
+        }
+        
+        th.middle, td.middle {
+            vertical-align: middle;
+        }
+        
+        thead tr th, thead tr td {
+            vertical-align: bottom;
+        }
+    }
+    
+    .contactTable, .accessTable, .serviceHoursTable, .costTable {
+        width: @p75;
+        font-size: 0.9em;
+        border-collapse: collapse;
+        
+        th {
+            width: 25%;
+            border-right: 1px solid @black;
+            border-bottom: 1px solid @black;
+        }
+        
+        td {
+            border-bottom: 1px solid @black;
+        }
+        
+        td, th {
+            padding: @padding1/2;
+            vertical-align: top;
+            text-align: left;
+        }
+        
+        td.last, th.last {
+            border-bottom: none;
+        }
+    }
+    
+    .p65 { width: 65%; }
+    .p85 { width: 85%; }
+}
+
+/*****************************Footer********************************/
+body > div > footer {
+    clear: both;
+    background-image: url("/pin.nsf/footer-bg.gif");
+    text-align: left;
+    width: @mainWidth;
+    margin: 0px auto;
+    overflow: visible;
+
+    .col1 {
+        float: left;
+        width: 250px;
+        padding: @padding1 @padding1 @padding1 @padding1*3;
+        text-align: center;
+    }
+
+    .col2 {
+        width: 540px;
+        padding: @padding1*2 @padding1/2 @padding1 @padding1;
+        background-image: url("/pin.nsf/house.png");
+        background-repeat: no-repeat;
+        float: right;
+        
+        ul.pointer {
+            padding-top:40px;
+            color: @pink;
+            
+            a {
+                color: @pink;
+                text-decoration: none;   
+            }
+            
+            a:hover {
+                color: lighten(@pink,10%);
+            }
+        }
+    }
+
+    .bottom {
+        clear: both;
+        background-color: @grey4;
+        text-align: left;
+        width: 946px;
+        margin: 0px auto;
+        overflow: visible;
+        height: auto;
+        padding: @padding1/2 0px @padding1/2 @padding1;
+        font-size:0.70em;
+        color: @pink;
+        
+        a {
+            color: @pink;
+            text-decoration: none;   
+        }
+        
+        a:hover {
+            color: lighten(@pink,10%);
+        }
+        
+        a.copyFooter {
+            text-transform: uppercase;
+        }
+    }
+}
+
+/*****************************Styles********************************/
+ul.pointer{
+    list-style-image: url("/pin.nsf/pointer.png");
+    text-indent: 5px;
+    list-style-position: outside;
+    list-style-type: square;
+    padding: @padding1;
+    margin: 2px;
+    line-height: 22px;
+}
+
+.tab {
+    font-family:  @fontType1;
+    font-size: 0.90em;
+    color: @white;
+    text-decoration: none
+}
+
+.mainfooter2 {
+    font-family:  @fontType1;
+    font-size: 0.85em;
+    color: #c62877;
+    text-decoration: none
+}
+
+a.mainfooter:hover{
+    color: @black;
+    text-decoration: underline
+}
+
+.sml {
+    font-size: 0.70em;
+}
+
+.header {
+    font-family:  @fontType2;
+    font-size: 2.6em;
+    color: #ee499b;
+    text-transform: uppercase;
+}
+.title1 {
+    font-family:  @fontType2;
+    font-size: 1.5em;
+    color: #ee499b;
+}
+
+table.standard {
+    th, td {
+        text-align: left;
+        font-size: 0.9em;
+        vertical-align: top;
+    }
+}
+
+.p10 { width:10% !important; }
+.p20 { width:20% !important; }
+.p30 { width:30% !important; }
+.p40 { width:40% !important; }
+.p50 { width:50% !important; }
+.p60 { width:60% !important; }
+.p70 { width:70% !important; }
+.p80 { width:80% !important; }
+.p90 { width:90% !important; }
+
+.rcbcAgeRangeHiddenDiv {
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 0px;
+}
+
+table.standard {
+    width: 96%;
+}
+
+.rcbcAgeRangeTable {
+    width: 95%;
+    
+    .rcbcAgeRangeCell {
+        vertical-align: top;
+    }
+    
+    .rcbcAgeRangeSelectorTh {
+        vertical-align: top;
+        font-weight: normal;
+        
+        .rcbcAgeRangeSelector {
+            width: 200px;
+        }
+    }
+    
+    .rcbcAgeRangeAgeSpinner {
+        width: 50px;
+    }
+}
+
+.dojoDijitHelperTooltip {
+    width: 200px;
+    background-color: #ccddff;
+    font-size:0.9em;
+    padding: 5px;
+    margin: 0px;
+    
+    .label {
+        color: #0000ff;
+    }
+}
+
+.dojoDijitErrorTooltip {
+    width: 200px;
+    background-color: #ffcccc;
+    font-size:0.9em;
+    padding: 5px;
+    margin: 0px;
+    
+    .label {
+        color: #ff0000;
+    }
+}
+
+.dojoDijitMissingTooltip {
+    width: 200px;
+    background-color: #ffcc99;
+    font-size:0.9em;
+    padding: 5px;
+    margin: 0px;
+    
+    .label {
+        color: #333333;
+    }
+}
+
+.dojoDijitInfoTooltip {
+    width: 200px;
+    background-color: #ddffdd;
+    font-size:0.9em;
+    padding: 5px;
+    margin: 0px;
+    
+    .label {
+        color: #009900;
+    }
+    
+    table {
+        border-collapse:collapse;
+        
+        td, th {
+            vertical-align: top;
+            padding: 3px;
+        }
+        
+        .r {
+            border-right: 1px solid #009900;
+        }
+        .l {
+            border-left: 1px solid #009900;
+        }
+        .b {
+            border-bottom: 1px solid #009900;
+        }
+        .t {
+            border-top: 1px solid #009900;
+        }
+    }
+}
+
+.rcbcCheckWithHiddenDiv {
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.rcbcCheckWithDetailsRow {
+    height: 27px;
+}
+
+div.dojoRcbcDijitLinkedIdListItem:hover {
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    width: 96%;
+    background-image: url("/pin.nsf/dotted-line.gif");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+
+.dojoRcbcDijitDialog {
+	width: 50%;
+	
+	.dojoRcbcDijitDialogFeedback {
+		background-color: #ccffcc;
+        font-size:0.9em;
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+	}
+    
+    .dojoRcbcDijitDialogError {
+        background-color: #ffcccc;
+        font-size:0.9em;
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+    }
+}
