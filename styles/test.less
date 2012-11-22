@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url("../scripts/rcbc/dijit/themes/claro/claro.css?v=1");
+
 @font-face {
     font-family: 'dunkin';
     src: url('/pin.nsf/fonts/dunkin/dunkin_sans-webfont.eot');
@@ -372,127 +374,11 @@ table.standard {
 .p80 { width:80% !important; }
 .p90 { width:90% !important; }
 
-.rcbcAgeRangeHiddenDiv {
-    visibility: hidden;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 0px;
-    width: 0px;
-}
 
 table.standard {
     width: 96%;
 }
 
-.rcbcAgeRangeTable {
-    width: 95%;
-    
-    .rcbcAgeRangeCell {
-        vertical-align: top;
-    }
-    
-    .rcbcAgeRangeSelectorTh {
-        vertical-align: top;
-        font-weight: normal;
-        
-        .rcbcAgeRangeSelector {
-            width: 200px;
-        }
-    }
-    
-    .rcbcAgeRangeAgeSpinner {
-        width: 50px;
-    }
-}
-
-.dojoDijitHelperTooltip {
-    width: 200px;
-    background-color: #ccddff;
-    font-size:0.9em;
-    padding: 5px;
-    margin: 0px;
-    
-    .label {
-        color: #0000ff;
-    }
-}
-
-.dojoDijitErrorTooltip {
-    width: 200px;
-    background-color: #ffcccc;
-    font-size:0.9em;
-    padding: 5px;
-    margin: 0px;
-    
-    .label {
-        color: #ff0000;
-    }
-}
-
-.dojoDijitMissingTooltip {
-    width: 200px;
-    background-color: #ffcc99;
-    font-size:0.9em;
-    padding: 5px;
-    margin: 0px;
-    
-    .label {
-        color: #333333;
-    }
-}
-
-.dojoDijitInfoTooltip {
-    width: 200px;
-    background-color: #ddffdd;
-    font-size:0.9em;
-    padding: 5px;
-    margin: 0px;
-    
-    .label {
-        color: #009900;
-    }
-    
-    table {
-        border-collapse:collapse;
-        
-        td, th {
-            vertical-align: top;
-            padding: 3px;
-        }
-        
-        .r {
-            border-right: 1px solid #009900;
-        }
-        .l {
-            border-left: 1px solid #009900;
-        }
-        .b {
-            border-bottom: 1px solid #009900;
-        }
-        .t {
-            border-top: 1px solid #009900;
-        }
-    }
-}
-
-.rcbcCheckWithHiddenDiv {
-    visibility: hidden;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-.rcbcCheckWithDetailsRow {
-    height: 27px;
-}
-
-div.dojoRcbcDijitLinkedIdListItem:hover {
-    cursor: pointer;
-}
 
 hr {
     border: none;
@@ -503,22 +389,3 @@ hr {
     background-repeat: repeat-x;
 }
 
-.dojoRcbcDijitDialog {
-	width: 50%;
-	
-	.dojoRcbcDijitDialogFeedback {
-		background-color: #ccffcc;
-        font-size:0.9em;
-        padding: 5px;
-        margin: 0px;
-        text-align: center;
-	}
-    
-    .dojoRcbcDijitDialogError {
-        background-color: #ffcccc;
-        font-size:0.9em;
-        padding: 5px;
-        margin: 0px;
-        text-align: center;
-    }
-}
