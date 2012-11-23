@@ -181,24 +181,28 @@ body > div > header{
         background-color: @colour;
     }
     
-    .tabs {
+    ul.tabs {
+        .zeroSurounds;
         float: left;
         clear: both;
         padding-top: @padding1;
         text-transform: uppercase;
         padding-left: @padding1;
+        list-style: none;
+        display: inline-block;
 
-        .adults-on { .TAB(@pink); }
-        .adults { .TAB(@pink); }
-        .adults:hover { .TAB(@grey4); }
-
-        .families-on { .TAB(@green); }
-        .families { .TAB(@green); }
-        .families:hover { .TAB(@grey4); }
-
-        .shortlist-on { .TAB(@grey2); }
-        .shortlist { .TAB(@grey2);}
-        .shortlist:hover { .TAB(@grey4); }
+        li.adults-on a, li.adults a { .TAB(@pink); }
+        li.families-on a, li.families a { .TAB(@green); }
+        li.shortlist-on a, li.shortlist a { .TAB(@grey2); }
+        
+        li {
+            .zeroSurounds;
+            display: inline-block;
+            
+            a:hover {
+                .TAB(@grey4);
+            }
+        }
     }
 }
 
