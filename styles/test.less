@@ -11,24 +11,37 @@
     font-style: normal;
 }
 
+// Directory Colours
+@pink: #ee499b;
+@green: #bcd411;
 @grey1: #efefef;
 @grey2: #dddddd;
 @grey3: #eaeaea;
 @grey4: #c0c0c0;
 
-@white: #ffffff;
-@black: #000000;
-
-@pink: #ee499b;
-@green: #bcd411;
-
+// Family Services Colours
 @turquoise: #02a5ac;
 @orange: #ff7f00;
 @lightBlue: #ceecf4;
 @yellow: #ffcc00;
 @red: #ff1400;
 @blue: #008cfb;
-@purple: #6a4588;
+@darkPurple: #6a4588;
+
+// Adult Services Colours
+@purple: #d776f9;
+@darkYellow: #ffcc00;
+@naveyBlue: #1656da;
+@yellowGreen: #acb811;
+@brown: #ea9d45;
+@darkRed: #c1132e;
+@darkBlue: #062d6e;
+@lightTurquoise: #0bc6cd;
+
+// Global Colours
+@white: #ffffff;
+@black: #000000;
+
 
 @padding1: 10px;
 @mainWidth: 956px;
@@ -226,27 +239,56 @@ body > div > article {
             a:hover {
                 text-decoration:underline
             }
-            
-            li.turquois a {
+        }
+        
+        ul.family-services {
+             li.activities-events a {
                 background-color: @turquoise;
             }
-            li.orange a {
+            li.health a {
                 background-color: @orange;
             }
-            li.lightBlue a {
+            li.home-family a {
                 background-color: @lightBlue;
             }
-            li.yellow a {
+            li.learning-training a {
                 background-color: @yellow;
             }
-            li.red a {
+            li.leisure a {
                 background-color: @red;
             }
-            li.blue a {
+            li.me a {
                 background-color: @blue;
             }
-            li.purple a {
+            li.work-money a {
+                background-color: @darkPurple;
+            }
+        }
+        
+        ul.adult-services {
+             li.about-care a {
                 background-color: @purple;
+            }
+            li.leisure a {
+                background-color: @darkYellow;
+            }
+            li.health-wellbeing a {
+                background-color: @naveyBlue;
+            }
+            li.money-benefits a {
+                background-color: @yellowGreen;
+            }
+            li.training-employment a {
+                background-color: @brown;
+            }
+            li.housing-property a {
+                background-color: @darkRed;
+            }
+            li.help-to-live-at-home a {
+                background-color: @darkBlue;
+            }
+            li.transport a {
+                background-color: @lightTurquoise;
             }
         }
     }
