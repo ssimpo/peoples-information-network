@@ -244,56 +244,56 @@ body > div > article {
                 text-decoration:underline
             }
         }
-        
-        ul.family-services {
-             li.activities-events a {
-                background-color: @turquoise;
-            }
-            li.health a {
-                background-color: @orange;
-            }
-            li.home-family a {
-                background-color: @lightBlue;
-            }
-            li.learning-training a {
-                background-color: @yellow;
-            }
-            li.leisure a {
-                background-color: @red;
-            }
-            li.me a {
-                background-color: @blue;
-            }
-            li.work-money a {
-                background-color: @darkPurple;
-            }
+    }
+    
+    ul.family-services {
+        li.activities-events a {
+            background-color: @turquoise;
         }
+        li.health a {
+            background-color: @orange;
+        }
+        li.home-family a {
+            background-color: @lightBlue;
+        }
+        li.learning-training a {
+            background-color: @yellow;
+        }
+        li.leisure a {
+            background-color: @red;
+        }
+        li.me a {
+            background-color: @blue;
+        }
+        li.work-money a {
+            background-color: @darkPurple;
+        }
+    }
         
-        ul.adult-services {
-             li.about-care a {
-                background-color: @purple;
-            }
-            li.leisure a {
-                background-color: @darkYellow;
-            }
-            li.health-wellbeing a {
-                background-color: @naveyBlue;
-            }
-            li.money-benefits a {
-                background-color: @yellowGreen;
-            }
-            li.training-employment a {
-                background-color: @brown;
-            }
-            li.housing-property a {
-                background-color: @darkRed;
-            }
-            li.help-to-live-at-home a {
-                background-color: @darkBlue;
-            }
-            li.transport a {
-                background-color: @lightTurquoise;
-            }
+    ul.adult-services {
+        li.about-care a {
+            background-color: @purple;
+        }
+        li.leisure a {
+            background-color: @darkYellow;
+        }
+        li.health-wellbeing a {
+            background-color: @naveyBlue;
+        }
+        li.money-benefits a {
+            background-color: @yellowGreen;
+        }
+        li.training-employment a {
+            background-color: @brown;
+        }
+        li.housing-property a {
+            background-color: @darkRed;
+        }
+        li.help-to-live-at-home a {
+            background-color: @darkBlue;
+        }
+        li.transport a {
+            background-color: @lightTurquoise;
         }
     }
     
@@ -314,9 +314,16 @@ body > div > article {
     }
     
     .articleContent{
-        font-size: 1.0em;
         width: 70%;
         float: right;
+    }
+    
+    .articleContent-wide{
+        width: 96%;
+    }
+    
+    .articleContent, .articleContent-wide{
+        font-size: 1.0em;
         
         h1, h2, h3, h4, h5, h6 {
             color: @pink;
@@ -336,6 +343,34 @@ body > div > article {
     
         .indent {
             margin-left: @padding1*2;
+        }
+        
+        ul.sectionMenu {
+            .zeroSurounds;
+            list-style: none;
+            display: block;
+            color: @white;
+            font-family: "dunkin", Tahoma, sans-serif;
+            text-transform: uppercase;
+            
+            li {
+                .zeroSurounds;
+                display: inline-block;
+                margin: 10px;
+                text-align:center;
+                float: left;
+                
+                a {
+                    color: @white;
+                    width:180px;height:108px;
+                    .ROUNDED-CORNERS(40px);
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: 10px;
+                    padding-top: 20px;
+                    font-size: 1.4em;
+                }
+            }
         }
     }
     
