@@ -17,29 +17,32 @@ body>div>header ul.tabs li{margin:0px;padding:0px;border:0px;display:inline-bloc
 body>div>article{height:auto;clear:both;background-image:url("/pin.nsf/dotted-line.gif");background-position:left bottom;background-repeat:repeat-x;padding:10px;}body>div>article aside{width:25%;float:left;padding-right:10px;height:auto;display:block;}body>div>article aside ul.sideMenu{margin:0px;padding:0px;border:0px;list-style:none;}body>div>article aside ul.sideMenu li{margin:0px;padding:0px;border:0px;}
 body>div>article aside ul.sideMenu a{font-size:1.1em;display:block;padding:2px 0px 0px 10px;width:100%;height:29px;text-decoration:none;margin:0px 0px 8px 8px;color:#ffffff;}
 body>div>article aside ul.sideMenu a:hover{text-decoration:underline;}
-body>div>article aside ul.family-services li.activities-events a{background-color:#02a5ac;}
-body>div>article aside ul.family-services li.health a{background-color:#ff7f00;}
-body>div>article aside ul.family-services li.home-family a{background-color:#ceecf4;}
-body>div>article aside ul.family-services li.learning-training a{background-color:#ffcc00;}
-body>div>article aside ul.family-services li.leisure a{background-color:#ff1400;}
-body>div>article aside ul.family-services li.me a{background-color:#008cfb;}
-body>div>article aside ul.family-services li.work-money a{background-color:#6a4588;}
-body>div>article aside ul.adult-services li.about-care a{background-color:#d776f9;}
-body>div>article aside ul.adult-services li.leisure a{background-color:#ffcc00;}
-body>div>article aside ul.adult-services li.health-wellbeing a{background-color:#1656da;}
-body>div>article aside ul.adult-services li.money-benefits a{background-color:#acb811;}
-body>div>article aside ul.adult-services li.training-employment a{background-color:#ea9d45;}
-body>div>article aside ul.adult-services li.housing-property a{background-color:#c1132e;}
-body>div>article aside ul.adult-services li.help-to-live-at-home a{background-color:#062d6e;}
-body>div>article aside ul.adult-services li.transport a{background-color:#0bc6cd;}
+body>div>article ul.family-services li.activities-events a{background-color:#02a5ac;}
+body>div>article ul.family-services li.health a{background-color:#ff7f00;}
+body>div>article ul.family-services li.home-family a{background-color:#ceecf4;}
+body>div>article ul.family-services li.learning-training a{background-color:#ffcc00;}
+body>div>article ul.family-services li.leisure a{background-color:#ff1400;}
+body>div>article ul.family-services li.me a{background-color:#008cfb;}
+body>div>article ul.family-services li.work-money a{background-color:#6a4588;}
+body>div>article ul.adult-services li.about-care a{background-color:#d776f9;}
+body>div>article ul.adult-services li.leisure a{background-color:#ffcc00;}
+body>div>article ul.adult-services li.health-wellbeing a{background-color:#1656da;}
+body>div>article ul.adult-services li.money-benefits a{background-color:#acb811;}
+body>div>article ul.adult-services li.training-employment a{background-color:#ea9d45;}
+body>div>article ul.adult-services li.housing-property a{background-color:#c1132e;}
+body>div>article ul.adult-services li.help-to-live-at-home a{background-color:#062d6e;}
+body>div>article ul.adult-services li.transport a{background-color:#0bc6cd;}
 body>div>article table.standard{width:96%;}body>div>article table.standard th,body>div>article table.standard td{vertical-align:top;}
 body>div>article table.standard th.middle,body>div>article table.standard td.middle{vertical-align:middle;}
 body>div>article table.standard thead tr th,body>div>article table.standard thead tr td{vertical-align:bottom;}
-body>div>article .articleContent{font-size:1.0em;width:70%;float:right;}body>div>article .articleContent h1,body>div>article .articleContent h2,body>div>article .articleContent h3,body>div>article .articleContent h4,body>div>article .articleContent h5,body>div>article .articleContent h6{color:#ee499b;}
-body>div>article .articleContent h1{font-size:1.2em;}
-body>div>article .articleContent h2{font-size:1.1em;}
-body>div>article .articleContent h3{font-size:1.0em;}
-body>div>article .articleContent .indent{margin-left:20px;}
+body>div>article .articleContent{width:70%;float:right;}
+body>div>article .articleContent-wide{width:96%;}
+body>div>article .articleContent,body>div>article .articleContent-wide{font-size:1.0em;}body>div>article .articleContent h1,body>div>article .articleContent-wide h1,body>div>article .articleContent h2,body>div>article .articleContent-wide h2,body>div>article .articleContent h3,body>div>article .articleContent-wide h3,body>div>article .articleContent h4,body>div>article .articleContent-wide h4,body>div>article .articleContent h5,body>div>article .articleContent-wide h5,body>div>article .articleContent h6,body>div>article .articleContent-wide h6{color:#ee499b;}
+body>div>article .articleContent h1,body>div>article .articleContent-wide h1{font-size:1.2em;}
+body>div>article .articleContent h2,body>div>article .articleContent-wide h2{font-size:1.1em;}
+body>div>article .articleContent h3,body>div>article .articleContent-wide h3{font-size:1.0em;}
+body>div>article .articleContent .indent,body>div>article .articleContent-wide .indent{margin-left:20px;}
+body>div>article .articleContent ul.sectionMenu,body>div>article .articleContent-wide ul.sectionMenu{margin:0px;padding:0px;border:0px;list-style:none;display:block;color:#ffffff;font-family:"dunkin",Tahoma,sans-serif;text-transform:uppercase;}body>div>article .articleContent ul.sectionMenu li,body>div>article .articleContent-wide ul.sectionMenu li{margin:0px;padding:0px;border:0px;display:inline-block;margin:10px;text-align:center;float:left;}body>div>article .articleContent ul.sectionMenu li a,body>div>article .articleContent-wide ul.sectionMenu li a{color:#ffffff;width:180px;height:108px;border-top-left-radius:40px;border-top-right-radius:40px;-webkit-border-top-left-radius:40px;-webkit-border-top-right-radius:40px;-moz-border-radius-topleft:40px;-moz-border-radius-topright:40px;border-bottom-left-radius:40px;border-bottom-right-radius:40px;-webkit-border-bottom-left-radius:40px;-webkit-border-bottom-right-radius:40px;-moz-border-radius-bottomleft:40px;-moz-border-radius-bottomright:40px;display:inline-block;text-decoration:none;padding:10px;padding-top:20px;font-size:1.4em;}
 body>div>article .contactTable,body>div>article .accessTable,body>div>article .serviceHoursTable,body>div>article .costTable{width:513px;font-size:0.9em;border-collapse:collapse;}body>div>article .contactTable th,body>div>article .accessTable th,body>div>article .serviceHoursTable th,body>div>article .costTable th{width:25%;border-right:1px solid #000000;border-bottom:1px solid #000000;}
 body>div>article .contactTable td,body>div>article .accessTable td,body>div>article .serviceHoursTable td,body>div>article .costTable td{border-bottom:1px solid #000000;}
 body>div>article .contactTable td,body>div>article .accessTable td,body>div>article .serviceHoursTable td,body>div>article .costTable td,body>div>article .contactTable th,body>div>article .accessTable th,body>div>article .serviceHoursTable th,body>div>article .costTable th{padding:5px;vertical-align:top;text-align:left;}
