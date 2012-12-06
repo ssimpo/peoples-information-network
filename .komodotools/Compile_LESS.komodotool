@@ -2,7 +2,7 @@
   "keyboard_shortcut": "", 
   "name": "Compile LESS", 
   "language": "JavaScript", 
-  "trigger_enabled": 1, 
+  "trigger_enabled": 0, 
   "value": [
     "if (extensions.less) {", 
     "    extensions.less.compileCompressFile();", 
