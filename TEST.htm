@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html >
+<!--[if IE 6]>
+<html id="ie6"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
+<!--<![endif]-->
 <head>
+<link rel="canonical" href="" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/scripts/lib/html5shiv.js"></script>
+<![endif]-->
+<link href="/scripts/rcbc/dijit/themes/elijah/elijah.css" type='text/css' rel="stylesheet" /><link href="/styles/test.css" type='text/css' rel="stylesheet" /><link href="/scripts/rcbc/dijit/themes/claro/claro.css" type='text/css' rel="stylesheet" />
+	<title>TEST PAGE</title>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<meta http-equiv="content-language" content="en-gb" />
-    <link rel="stylesheet" href="scripts/release/pin/dijit/themes/claro/claro.css">
-	<script src="scripts/dojo/dojo.js"></script>
-</head>
-<body class="claro">
+	<meta name="ROBOTS" content="NOODP" />
+	<meta name="viewport" content="width=device-width" />
 	<script type="text/javascript">
-		require([
-			"simpo/dijit/colourPanel"
-		], function(panel){
-			console.log(panel);
-			//var cPan = new simpo.dijit.colourPanel({});
-			//console.log(cPan);
-		})
+		var dojoConfig = {
+			"async": true,
+			"cacheBust": new Date(),
+			"parseOnLoad": false,
+			"packages": [
+				{"name": "dojo", "location":"/scripts/dojo"},
+				{"name": "dojox", "location":"/scripts/dojox"},
+				{"name": "dijit", "location":"/scripts/dijit"},
+				{"name": "rcbc", "location":"/scripts/rcbc"},
+			{"name": "lib", "location":"/lib"},
+			{"name": "simpo", "location":"/scripts/simpo"}
+		]
+	};
 	</script>
+	<script type="text/javascript" src="/scripts/dojo/dojo.js"></script>
+	<script type="text/javascript">
+		require(["dojo/parser","dojo/ready"], function(parser,ready){
+			ready(function(){
+				parser.parse();
+			})
+		});
+	</script>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+	<meta name="copyright" content="Peoples Information Network - Redcar &amp; Cleveland Borough Council &copy; 2012" />
+	<meta property='fb:app_id' content='168510931698' />
+</head>
+<body class="elijah">
+<div class="main">
+<header>
+</header>
+<article>
+	<div class="articleContent">
+		<h1>Webworker Test</h1>
+		
+		<script type="text/javascript" async="true">
+			require([
+				"dojo/has",
+				"simpo/webworker"
+			], function(has, webworker){
+				if(has("webworker")){
+					var fab = new webworker({
+						"src": "/scripts/worker.js"
+					});
+					
+					fab.postMessage("Hello World");
+					console.log(has("webworker-can-post-objects"));
+				}
+			});
+		</script>
+	</div>
+</article>
+<footer>
+</footer>
 </body>
 </html>
