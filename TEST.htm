@@ -33,10 +33,10 @@
 				{"name": "dojox", "location":"/scripts/dojox"},
 				{"name": "dijit", "location":"/scripts/dijit"},
 				{"name": "rcbc", "location":"/scripts/rcbc"},
-			{"name": "lib", "location":"/lib"},
-			{"name": "simpo", "location":"/scripts/simpo"}
-		]
-	};
+				{"name": "lib", "location":"/scripts/lib"},
+				{"name": "simpo", "location":"/scripts/simpo"}
+			]
+		};
 	</script>
 	<script type="text/javascript" src="/scripts/dojo/dojo.js"></script>
 	<script type="text/javascript">
@@ -66,7 +66,7 @@
 			], function(has, webworker){
 				if(has("webworker")){
 					var fab = new webworker({
-						"src": "/scripts/worker.js"
+						"src": "simpo/test"
 					});
 					
 					fab.postMessage("Hello World");

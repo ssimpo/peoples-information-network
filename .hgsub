@@ -1,3 +1,4 @@
 scripts/rcbc = https://bitbucket.org/ssimpo/dojo-rcbc
 scripts/lib = https://bitbucket.org/ssimpo/dojo-lib
-scripts/simpo = https://bitbucket.org/ssimpo/dojo-simpo
+scripts/simpo = https://bitbucket.org/ssimpo/dojo-simpop
+scripts/simpop = https://bitbucket.org/ssimpo/dojo-simpo
