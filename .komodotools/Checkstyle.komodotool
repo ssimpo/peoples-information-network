@@ -2,7 +2,7 @@
   "keyboard_shortcut": "", 
   "name": "Checkstyle", 
   "language": "JavaScript", 
-  "trigger_enabled": 1, 
+  "trigger_enabled": 0, 
   "value": [
     "if (!org) var org = {};", 
     "if (!org.simpo) org.simpo = {};", 
