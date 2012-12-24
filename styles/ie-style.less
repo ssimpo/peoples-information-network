@@ -1,0 +1,44 @@
+    /*****************************Tabs********************************/
+    
+    
+
+    .TAB {
+        float: left;
+        padding: @padding1 @padding1*2 0px @padding1*2;
+        height: 38px;
+        font: 1.4em @fontType2;
+        letter-spacing: 1px;
+        color: @white;
+        text-align: center;
+        margin-right: 2px;
+        text-decoration: none;
+        background-color: @colour;
+    }
+    
+    ul.tabs {
+        .zeroSurounds;
+        float: left;
+        clear: both;
+        padding-top: @padding1;
+        text-transform: uppercase;
+        padding-left: @padding1;
+        list-style: none;
+        display: inline-block;
+
+        li.adults-on a { background:url(/pin.nsf/adults-on.png);width:138px;height:48px; }
+        li.adults a { background:url(/pin.nsf/adults.png);width:138px;height:48px; }
+        li.families-on a { background:url(/pin.nsf/families-on.png);width:158px;height:48px; }
+        li.families a { background:url(/pin.nsf/shortlist.png);width:158px;height:48px; }
+        li.shortlist-on a { background:url(/pin.nsf/families-on.png);width:221px;height:48px; }
+        li.shortlist a { background:url(/pin.nsf/families.png);width:221px;height:48px; }
+        
+        li {
+            .zeroSurounds;
+            display: inline-block;
+            
+            a:hover {
+                .TAB(@grey4);
+            }
+        }
+    }
+}

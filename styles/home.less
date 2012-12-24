@@ -141,7 +141,7 @@ body > div > header{
     
     background-color: @white;
     
-    
+    background-image: url("/pin.nsf/dotted-line.gif");
     background-position: left bottom;
     background-repeat: repeat-x;
     
@@ -149,9 +149,9 @@ body > div > header{
         float: left;
     }
     
-        
-  .logolg {padding-top:10px;padding-left:250px;}
-        
+     .logolg {
+        width:956px;margin:0px auto;text-align:left;padding-top:10px;padding-left:10px;padding-right:10px;overflow:visible;height:auto
+    }
     
     .col2 {
         float:right;
@@ -236,7 +236,7 @@ body > div > header{
     }
 }
 
-body > div > article, .rcbcPIN {
+body > div > article {
     height: auto;
     clear: both;
     padding: @padding1;
@@ -244,7 +244,7 @@ body > div > article, .rcbcPIN {
     //background-position: left bottom;
     //background-repeat: repeat-x;
     
-    aside, .rcbcArticleAside {
+    aside {
         width: 25%;
         float: left;
         padding-right: @padding1;
@@ -295,7 +295,7 @@ body > div > article, .rcbcPIN {
         li.learning-training a {
             background-color: @red;
         }
-        li.leisure-sport a {
+        li.leisure a {
             background-color: @darkYellow;
         }
         li.me a {
@@ -310,7 +310,7 @@ body > div > article, .rcbcPIN {
         li.about-care a {
             background-color: @purple;
         }
-        li.leisure-sport a {
+        li.leisure a {
             background-color: @darkYellow;
         }
         li.health-wellbeing a {
@@ -616,103 +616,44 @@ hr {
 	}
 }
 
-
-.rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
-    background-color: #f5f5f5; @padding:1;
-    li {
-        font-family: Tahoma, sans-serif;
-        font-size: 0.65em;
-        color:#4c4a4a;
-        line-height:18px;
-        
-    a {
-        color:#4c4a4a;
-        text-decoration:none;
-        padding:3px
-    }
-    a:hover {
-        background:#e7e7e7;
-        text-decoration:none;
-        padding:2px;
-        font-weight:400px;}
-    }
-}
-
-
 .rcbcWidgetsServicListDisplayerServices {
     .COLUMNS(45%, 2, 50px, transparent);
-    li { font-family: Tahoma, sans-serif; font-size: 0.85em; color:#4c4a4a;line-height:25px; 
-       a {color:#4c4a4a;text-decoration:none; font-weight:bold;padding:3px}
-       a:hover {background:#f0f0f0;text-decoration:none; padding:3px}
+    li { font-family: Tahoma, sans-serif; font-size: 1.0em; color:#4c4a4a;line-height:30px; 
+       a {color:#4c4a4a;text-decoration:none; font-weight:bold;padding:5px}
+       a:hover {background:#f0f0f0;text-decoration:none; padding:5px}
     }
 }
 
-.health-wellbeing ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/health-wellbeing.gif"); }
+.health-wellbeing .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/health-wellbeing.gif); }
 
-.leisure-sport ul.rcbcWidgetsServicListDisplayerServices { list-style-image: url("/pin.nsf/leisure.gif"); }
+.leisure .rcbcWidgetsServicListDisplayerServices { list-style-image: url(/pin.nsf/leisure.gif); }
 
-.money-benefits ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/money-benefits.gif");}
+.money-benefits .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/money-benefits.gif);}
 
-.training-employment ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/training-employment.gif"); }
+.training-employment .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/training-employment.gif); }
 
-.housing-property ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/housing-property.gif");}
+.housing-property .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/housing-property.gif);}
 
-.help-to-live-at-home ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/help-home.gif"); }
+.help-to-live-at-home .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/help-home.gif); }
 
-.about-care ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/about-care.gif"); }
+.about-care .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/about-care.gif); }
 
-.transport ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/transport.gif"); }
-
-
-
-
-.me ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/me.gif");}
-
-.home-family ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/home-family.gif");}
-
-.work-money ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/work-money.gif");}
-
-.learning-training ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/learning-training.gif");}
-
-.health ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/health.gif");}
-
-.activities-events ul.rcbcWidgetsServicListDisplayerServices {list-style-image: url("/pin.nsf/activities-events.gif");}
+.transport .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/transport.gif); }
 
 
 
-/*****************************Homepage********************************/
 
-.homecol1 { font-family:
-            Tahoma, sans-serif;
-            font-size: 0.90em;
-            font-weight:bold;
-            color:#4c4a4a;
-            line-height:20px;
-            background-image:url("/pin.nsf/home-bg.gif");
-            width:442px;
-            height:300px;
-            float:left;
-            padding-right:15px;
-            }
-            
-            .homecol2 { font-family:
-            Tahoma, sans-serif;
-            font-weight:400px;
-            font-size: 1.1em;
-            line-height:20px;
-            width:450px
-            float:right;
-            margin-left:10px;
-            }
+.me .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/me.gif);}
 
-.colsearch { }
+.home-family .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/home-family.gif);}
 
-.pink {color:@pink}
+.work-money .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/work-money.gif);}
 
-a.titlePink {color:@pink; text-decoration:none; font-weight:400px;}
-a.titleGreen {color:@green; text-decoration:none; font-weight:400px;}
-a.titleGrey  {color:#4c4a4a; text-decoration:none; font-weight:400px;}
+.learning-training .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/learning-training.gif);}
 
-.contentPink  {color:@pink; text-decoration:none; font-weight:400px;}
-.contentGreen  {color:@green; text-decoration:none; font-weight:400px;}
-.contentGrey  {color:#4c4a4a; text-decoration:none; font-weight:400px;}
+.health .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/health.gif);}
+
+.activities-events .rcbcWidgetsServicListDisplayerServices {list-style-image: url(/pin.nsf/activities-events.gif);}
+
+
+.centrealign {width:956px;margin:0px auto;text-align:left;padding-top:10px;padding-left:10px;padding-right:10px;overflow:visible;height:auto}

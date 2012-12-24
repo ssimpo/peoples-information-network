@@ -62,8 +62,9 @@
 		<script type="text/javascript" async="true">
 			require([
 				"dojo/has",
-				"simpo/webworker"
-			], function(has, webworker){
+				"simpo/webworker",
+				"dojo/on"
+			], function(has, webworker, on){
 				if(has("webworker")){
 					var fab = new webworker({
 						"src": "simpo/test"
@@ -71,6 +72,10 @@
 					
 					fab.postMessage("Hello World");
 					console.log(has("webworker-can-post-objects"));
+					
+					on(fab, "message", function(e){
+						console.log("DATA", e.message);
+					})
 				}
 			});
 		</script>
