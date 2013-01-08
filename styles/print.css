@@ -1,0 +1,6 @@
+body>div>header{display:none;}
+body>div>footer{display:none;}
+body>div>article aside,.rcbcPIN aside,body>div>article .rcbcArticleAside,.rcbcPIN .rcbcArticleAside{display:none;}
+body>div>article .buttonsPanel,.rcbcPIN .buttonsPanel{display:none;}
+body>div>article .articleContent,.rcbcPIN .articleContent{width:96%;}
+body>div>article .rcbcShortlistSelector,.rcbcPIN .rcbcShortlistSelector{display:none;}
