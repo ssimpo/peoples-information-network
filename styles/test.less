@@ -131,6 +131,13 @@ h1 {
     background-color: @white;
 }
 
+.header {
+    font-family:  @fontType2;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    color: @grey2;
+}
+
 hr {
     border: none;
     clear: both;
@@ -178,22 +185,6 @@ body > div > header{
                     height: 25px;
                     border: 2px solid @pink;
                 }
-                
-               .dijitButtonNode, .dijitButtonNode:hover {
-                    //background-image: none !important;
-                    color: @white !important;
-                    font-weight: bold !important;
-                    border: 2px solid darken(@pink,20%) !important;
-                }
-                
-                .dijitButtonNode {
-                    //background: darken(@pink,10%) !important;
-                }
-                
-                .dijitButtonNode:hover {
-                    //background: @pink !important;
-                }
-                
             }
         }
     }
@@ -285,57 +276,6 @@ body > div > article, .rcbcPIN {
         text-align: right;
     }
     
-    ul.family-services {
-        li.activities-events a {
-            background-color: @darkPurple;
-        }
-        li.health a {
-            background-color: @blue;
-        }
-        li.home-family a {
-            background-color: @orange;
-        }
-        li.learning-training a {
-            background-color: @red;
-        }
-        li.leisure-sport a {
-            background-color: @darkYellow;
-        }
-        li.me a {
-            background-color: @turquoise;
-        }
-        li.work-money a {
-            background-color: @lightBlue;
-        }
-    }
-        
-    ul.adult-services {
-        li.about-care a {
-            background-color: @purple;
-        }
-        li.leisure-sport a {
-            background-color: @darkYellow;
-        }
-        li.health-wellbeing a {
-            background-color: @naveyBlue;
-        }
-        li.money-benefits a {
-            background-color: @yellowGreen;
-        }
-        li.training-employment a {
-            background-color: @brown;
-        }
-        li.housing-property a {
-            background-color: @darkRed;
-        }
-        li.help-to-live-at-home a {
-            background-color: @darkBlue;
-        }
-        li.transport a {
-            background-color: @lightTurquoise;
-        }
-    }
-    
     table.standard {
         width: 96%;
         
@@ -363,10 +303,6 @@ body > div > article, .rcbcPIN {
     
     .articleContent, .articleContent-wide{
         font-size: 1.0em;
-        
-        h1, h2, h3, h4, h5, h6 {
-            color: @pink;
-        }
         
         h1 {
             font-size: 1.2em;
@@ -441,6 +377,315 @@ body > div > article, .rcbcPIN {
     
     .p65 { width: 65%; }
     .p85 { width: 85%; }
+}
+
+.dijitButtonNode {
+    border-color: darken(@grey2, 45%) !important;
+    font-weight: bold !important;
+    border-width: 2px !important;
+    background-image: none !important;
+    background-color: @grey2 !important;
+}
+
+.dijitTextBox:hover {
+    background-color: @grey2 !important;
+}
+
+.dijitTextBox {
+    border-width: 2px !important;
+    color: darken(@grey2, 45%) !important;
+    border-color: darken(@grey2, 45%) !important;
+}
+
+.family-services {
+    h1, h2, h3, h4, h5, h6 {
+        color: @green;
+    }
+    
+    ul {
+        li.activities-events a {
+            background-color: @darkPurple;
+        }
+        li.health a {
+            background-color: @blue;
+        }
+        li.home-family a {
+            background-color: @orange;
+        }
+        li.learning-training a {
+            background-color: @red;
+        }
+        li.leisure-sport a {
+            background-color: @darkYellow;
+        }
+        li.me a {
+            background-color: @turquoise;
+        }
+        li.work-money a {
+            background-color: @lightBlue;
+        }
+    }
+    
+    .dijitTextBox {
+        border-color: @green !important;
+    }
+    
+    .dijitTextBox:hover {
+        background-color: lighten(@green, 45%) !important;
+    }
+    
+    .dijitButtonNode {
+        background-color: lighten(@green, 45%) !important;
+        color: @green !important;
+        border-color: @green !important;
+    }
+}
+
+.header.family-services{
+    color: @green;
+}
+
+.adult-services {
+    h1, h2, h3, h4, h5, h6 {
+        color: @pink;
+    }
+    
+    ul {
+        li.about-care a {
+            background-color: @purple;
+        }
+        li.leisure-sport a {
+            background-color: @darkYellow;
+        }
+        li.health-wellbeing a {
+            background-color: @naveyBlue;
+        }
+        li.money-benefits a {
+            background-color: @yellowGreen;
+        }
+        li.training-employment a {
+            background-color: @brown;
+        }
+        li.housing-property a {
+            background-color: @darkRed;
+        }
+        li.help-to-live-at-home a {
+            background-color: @darkBlue;
+        }
+        li.transport a {
+            background-color: @lightTurquoise;
+        }
+    }
+    
+    .dijitTextBox {
+         border-color: @pink !important;
+    }
+    
+    .dijitTextBox:hover {
+        background-color: lighten(@pink, 25%) !important;
+    }
+    
+    .dijitButtonNode {
+        background-color: lighten(@pink, 25%) !important;
+        color: @pink !important;
+        border-color: @pink !important;
+    }
+}
+
+.header.adult-services{
+    color: @pink;
+}
+
+.activities-events {
+    h1 {
+        color: @darkPurple;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/activities-events.gif");
+    }
+}
+
+.health {
+    h1 {
+        color: @blue;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/health.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@blue, 45%);
+    }
+}
+
+.home-family {
+    h1 {
+        color: @orange;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/home-family.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@orange, 35%);
+    }
+}
+
+.learning-training {
+    h1 {
+        color: @red;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/learning-training.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@red, 45%);
+    }
+}
+
+.me {
+    h1 {
+        color: @turquoise;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/me.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@turquoise, 60%);
+    }
+}
+
+.work-money {
+    h1 {
+        color: @lightBlue;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/work-money.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@lightBlue, 25%);
+    }
+}
+
+.about-care {
+    h1 {
+        color: @purple;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/about-care.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@purple, 25%);
+    }
+}
+
+.leisure-sport {
+    h1 {
+        color: @darkYellow;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/leisure.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@darkYellow, 30%);
+    }
+}
+
+.health-wellbeing {
+    h1 {
+        color: @naveyBlue;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/health-wellbeing.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@naveyBlue, 50%);
+    }
+}
+
+.money-benefits {
+    h1 {
+        color: @yellowGreen;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/money-benefits.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@yellowGreen, 50%);
+    }
+}
+
+.training-employment {
+    h1 {
+        color: @brown;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/training-employment.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@brown, 35%);
+    }
+}
+
+.housing-property {
+    h1 {
+        color: @darkRed;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/housing-property.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@darkRed, 50%);
+    }
+}
+
+.help-to-live-at-home {
+    h1 {
+        color: @darkBlue;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/help-home.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@darkBlue, 70%);
+    }
+}
+
+.transport {
+    h1 {
+        color: @lightTurquoise;
+    }
+    
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/transport.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@lightTurquoise, 50%);
+    }
 }
 
 /*****************************Footer********************************/
@@ -542,12 +787,6 @@ a.mainfooter:hover{
     font-size: 0.70em;
 }
 
-.header {
-    font-family:  @fontType2;
-    font-size: 2.6em;
-    color: #ee499b;
-    text-transform: uppercase;
-}
 .title1 {
     font-family:  @fontType2;
     font-size: 1.5em;
@@ -659,64 +898,6 @@ ul.rcbcWidgetsServicListDisplayerServices {
         margin-left: 20px
     }
 }
-
-.health-wellbeing ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/health-wellbeing.gif");
-}
-
-.leisure-sport ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/leisure.gif");
-}
-
-.money-benefits ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/money-benefits.gif");
-}
-
-.training-employment ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/training-employment.gif");
-}
-
-.housing-property ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/housing-property.gif");
-}
-
-.help-to-live-at-home ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/help-home.gif");
-}
-
-.about-care ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/about-care.gif");
-}
-
-.transport ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/transport.gif");
-}
-
-.me ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/me.gif");
-}
-
-.home-family ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/home-family.gif");
-}
-
-.work-money ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/work-money.gif");
-}
-
-.learning-training ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/learning-training.gif");
-}
-
-.health ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/health.gif");
-}
-
-.activities-events ul.rcbcWidgetsServicListDisplayerServices {
-    list-style-image: url("/pin.nsf/activities-events.gif");
-}
-
-
 
 /*****************************Homepage********************************/
 
