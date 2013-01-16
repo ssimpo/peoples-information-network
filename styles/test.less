@@ -230,6 +230,11 @@ body > div > header{
     }
 }
 
+.buttonsPanel {
+    float: right;
+    text-align: right;
+}
+
 body > div > article, .rcbcPIN {
     height: auto;
     clear: both;
@@ -268,12 +273,6 @@ body > div > article, .rcbcPIN {
                 text-decoration:underline
             }
         }
-    }
-    
-    .buttonsPanel {
-        width: 35%;
-        float: right;
-        text-align: right;
     }
     
     table.standard {
@@ -399,8 +398,9 @@ body > div > article, .rcbcPIN {
 
 .rcbcButtonPanelTooltipText {
     width: 350px;
-    color: @grey2;
-    background-color: darken(@grey2, 45%);
+    color: darken(@grey2, 45%);
+    background-color: @grey2;
+    padding: 5px;
 }
 
 .family-services {
@@ -452,8 +452,7 @@ body > div > article, .rcbcPIN {
 }
 
 .rcbcButtonPanelTooltipText.family-services {
-    background-color: lighten(green2, 45%);
-    color: @green;
+    background-color: lighten(@green, 45%);
 }
 
 .adult-services {
@@ -507,9 +506,8 @@ body > div > article, .rcbcPIN {
     color: @pink;
 }
 
-.rcbcButtonPanelTooltipText.family-services {
-    background-color: lighten(green2, 25%);
-    color: @green;
+.rcbcButtonPanelTooltipText.adult-services {
+    background-color: lighten(@pink, 35%);
 }
 
 .activities-events {
@@ -533,6 +531,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@blue, 45%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @blue;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@blue, 15%);
+        }
     }
 }
 
@@ -547,6 +553,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@orange, 35%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @orange;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@orange, 15%);
+        }
     }
 }
 
@@ -561,6 +575,16 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@red, 45%);
+        
+        .rcbcPinExpandingHeading{
+            .rcbcPinExpandingDivTitle {
+                color: @red;
+            }
+        
+            .rcbcPinExpandingDivInfo {
+                color: lighten(@red, 15%);
+            }
+        }
     }
 }
 
@@ -575,6 +599,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@turquoise, 60%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @turquoise;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@turquoise, 10%);
+        }
     }
 }
 
@@ -588,7 +620,15 @@ body > div > article, .rcbcPIN {
     }
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
-        background-color: lighten(@lightBlue, 25%);
+        background-color: lighten(@lightBlue, 30%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @lightBlue;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@lightBlue, 15%);
+        }
     }
 }
 
@@ -603,6 +643,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@purple, 25%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @purple;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@purple, 5%);
+        }
     }
 }
 
@@ -616,7 +664,15 @@ body > div > article, .rcbcPIN {
     }
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
-        background-color: lighten(@darkYellow, 30%);
+        background-color: lighten(@darkYellow, 45%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @darkYellow;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@darkYellow, 5%);
+        }
     }
 }
 
@@ -631,6 +687,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@naveyBlue, 50%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @naveyBlue;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@naveyBlue, 15%);
+        }
     }
 }
 
@@ -645,6 +709,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@yellowGreen, 50%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @yellowGreen;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@yellowGreen, 5%);
+        }
     }
 }
 
@@ -659,6 +731,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@brown, 35%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @brown;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@brown, 5%);
+        }
     }
 }
 
@@ -673,6 +753,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@darkRed, 50%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @darkRed;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@darkRed, 15%);
+        }
     }
 }
 
@@ -687,6 +775,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@darkBlue, 70%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @darkBlue;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@darkBlue, 15%);
+        }
     }
 }
 
@@ -701,6 +797,14 @@ body > div > article, .rcbcPIN {
     
     .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
         background-color: lighten(@lightTurquoise, 50%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @lightTurquoise;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@lightTurquoise, 15%);
+        }
     }
 }
 
