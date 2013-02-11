@@ -6,3 +6,4 @@ scripts/dojo
 scripts/dojox
 scripts/dijit
 sample/
+*.json
