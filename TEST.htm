@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" dir="ltr" lang="<Computed Value>">
-<!--<![endif]-->
+<html >
 <head>
-<link rel="canonical" href="" />
-<!--[if lt IE 9]>
-	<script type="text/javascript" src="/scripts/lib/html5shiv.js"></script>
-<![endif]-->
-<link href="/scripts/rcbc/dijit/themes/elijah/elijah.css" type='text/css' rel="stylesheet" /><link href="/styles/test.css" type='text/css' rel="stylesheet" /><link href="/scripts/rcbc/dijit/themes/claro/claro.css" type='text/css' rel="stylesheet" />
-	<title>TEST PAGE</title>
-	<meta charset="UTF-8" />
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<meta http-equiv="content-language" content="en-gb" />
-	<meta name="ROBOTS" content="NOODP" />
-	<meta name="viewport" content="width=device-width" />
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="/scripts/dijit/themes/claro/claro.css"
+	/>
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="/styles/ss.css"
+	/>
 	<script type="text/javascript">
 		var dojoConfig = {
 			"async": true,
@@ -38,50 +26,33 @@
 			]
 		};
 	</script>
-	<script type="text/javascript" src="/scripts/dojo/dojo.js"></script>
+	<script type="text/javascript" src='/scripts/dojo/dojo.js'></script>
 	<script type="text/javascript">
-		require(["dojo/parser","dojo/ready"], function(parser,ready){
+		require([
+			"dojo/ready",
+			"dojo/parser"
+		], function(ready, parser){
 			ready(function(){
 				parser.parse();
-			})
+			});
 		});
 	</script>
-	<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
-	<meta name="copyright" content="Peoples Information Network - Redcar &amp; Cleveland Borough Council &copy; 2012" />
-	<meta property='fb:app_id' content='168510931698' />
 </head>
-<body class="elijah">
+<body class="claro">
 <div class="main">
-<header>
-</header>
-<article>
-	<div class="articleContent">
-		<h1>Webworker Test</h1>
-		
-		<script type="text/javascript" async="true">
-			require([
-				"dojo/has",
-				"simpo/webworker",
-				"dojo/on"
-			], function(has, webworker, on){
-				if(has("webworker")){
-					var fab = new webworker({
-						"src": "simpo/test"
-					});
-					
-					fab.postMessage("Hello World");
-					console.log(has("webworker-can-post-objects"));
-					
-					on(fab, "message", function(e){
-						console.log("DATA", e.message);
-					})
-				}
-			});
-		</script>
-	</div>
-</article>
-<footer>
-</footer>
+	<div class="photo1"><!--img src="images/test/1.jpg" /--></div>
+	<div class="photo2"><!--img src="images/test/2.jpg" /--></div>
+	<div class="photo3"><!--img src="images/test/3.jpg" /--></div>
+	<div class="photo4"><!--img src="images/test/4.jpg" /--></div>
+	<div class="photo5"><!--img src="images/test/5.jpg" /--></div>
+	<!--div class="photo6">&nbsp;</div-->
+	<!--div class="photo7">&nbsp;</div-->
+	<!--div class="photo8">&nbsp;</div-->
+	<!--div class="photo9">&nbsp;</div-->
+	<!--div class="photo10">&nbsp;</div-->
+	<article>
+		<h1>TEST</h1>
+	</article>
+</div>
 </body>
 </html>
