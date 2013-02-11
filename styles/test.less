@@ -23,14 +23,15 @@
 @turquoise: #02a5ac;
 @orange: #ff7f00;
 @lightBlue: #89b6c2;
-@yellow: #ffcc00;
+@yellow: #e9c32d;
+//@yellow: #000000;
 @red: #ff1400;
 @blue: #008cfb;
 @darkPurple: #a823df;
 
 // Adult Services Colours
 @purple: #d776f9;
-@darkYellow: #ffcc00;
+@darkYellow: #e9c32d;
 @naveyBlue: #1656da;
 @yellowGreen: #acb811;
 @brown: #ea9d45;
@@ -101,6 +102,15 @@ a.set1:hover{color:#bcd411;text-decoration:underline}
   column-rule-color: @columnRuleColor;
   column-rule-style: @columnRuleStyle;
   column-rule-width: @columnRuleWidth;
+  
+  & li {
+    break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+  }
 }
 
 html {
@@ -184,6 +194,7 @@ body > div > header{
                     width: 200px;
                     height: 25px;
                     border: 2px solid @pink;
+                    .ROUNDED-CORNERS(@padding1/2);
                 }
             }
         }
@@ -300,6 +311,22 @@ body > div > article, .rcbcPIN {
         width: 96%;
     }
     
+    ul.rcbcWidgetsServicListDisplayerServices {
+        list-style-image: url("/pin.nsf/health.gif");
+    }
+    
+    .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv {
+        background-color: lighten(@blue, 45%);
+        
+        .rcbcPinExpandingDivTitle {
+            color: @blue;
+        }
+        
+        .rcbcPinExpandingDivInfo {
+            color: lighten(@blue, 15%);
+        }
+    }
+    
     .articleContent, .articleContent-wide{
         font-size: 1.0em;
         
@@ -408,7 +435,7 @@ body > div > article, .rcbcPIN {
         color: @green;
     }
     
-    ul {
+    ul, &.family-services {
         li.activities-events a {
             background-color: @darkPurple;
         }
@@ -460,7 +487,7 @@ body > div > article, .rcbcPIN {
         color: @pink;
     }
     
-    ul {
+    ul, &.adult-services {
         li.about-care a {
             background-color: @purple;
         }
@@ -825,7 +852,7 @@ body > div > footer {
     }
 
     .col2 {
-        width: 544px;
+        width: 640px;
         padding: @padding1*2 @padding1/2 @padding1 @padding1;
         background-image: url("/pin.nsf/house.png");
         background-repeat: no-repeat;
@@ -874,6 +901,11 @@ body > div > footer {
 }
 
 /*****************************Styles********************************/
+
+.set1 {color:#ec008c;text-decoration:none}
+a.set1:hover{color:#1aa6ac;text-decoration:underline}
+a.set1:visited {color:#ec008c;text-decoration:none}
+
 ul.pointer{
     list-style-image: url("/pin.nsf/pointer.png");
     text-indent: 5px;
@@ -910,6 +942,12 @@ a.mainfooter:hover{
 .title1 {
     font-family:  @fontType2;
     font-size: 1.5em;
+    color: #ee499b;
+}
+
+.title2 {
+    font-family:  @fontType2;
+    font-size: 0.9em;
     color: #ee499b;
 }
 
@@ -1003,9 +1041,12 @@ hr {
 
 .rcbcWidgetsServicListDisplayerServices {
     .COLUMNS(45%, 2, 50px, transparent);
-    li { font-family: Tahoma, sans-serif; font-size: 0.85em; color:#4c4a4a;line-height:25px; 
-       a {color:#4c4a4a;text-decoration:none; font-weight:bold;padding:3px}
-       a:hover {background:#f0f0f0;text-decoration:none; padding:3px}
+    li { font-family: Tahoma, sans-serif; font-size: 0.85em; color:#4c4a4a;line-height:25px;
+        /*a, a:hover {
+            display: inline-block; width:95%; padding: 0px; margin: 0px;
+        }*/
+        a {color:#4c4a4a;text-decoration:none; font-weight:bold;padding:3px}
+        a:hover {background:#f0f0f0;text-decoration:none; padding:3px}
     }
 }
 
@@ -1055,3 +1096,9 @@ a.titleGrey  {color:#4c4a4a; text-decoration:none; font-weight:400px;}
 .contentPink  {color:@pink; text-decoration:none; font-weight:400px;}
 .contentGreen  {color:@green; text-decoration:none; font-weight:400px;}
 .contentGrey  {color:#4c4a4a; text-decoration:none; font-weight:400px;}
+
+.rcbcWidgetsVenueDisplayerMap{
+    .ROUNDED-CORNERS(@padding1*3);
+    margin-top: @padding1*5;
+    margin-bottom: @padding1*3;
+}
