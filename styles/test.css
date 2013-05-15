@@ -17,9 +17,8 @@ body>div>header ul.tabs li.families-on a,body>div>header ul.tabs li.families a{f
 body>div>header ul.tabs li.shortlist-on a,body>div>header ul.tabs li.shortlist a{float:left;border-top-left-radius:30px;border-top-right-radius:30px;-webkit-border-top-left-radius:30px;-webkit-border-top-right-radius:30px;-moz-border-radius-topleft:30px;-moz-border-radius-topright:30px;padding:10px 20px 0px 20px;height:38px;font:1.4em "dunkin",Tahoma,sans-serif;letter-spacing:1px;color:#ffffff;text-align:center;margin-right:2px;text-decoration:none;background-color:#dddddd;}
 body>div>header ul.tabs li{margin:0px;padding:0px;border:0px;display:inline-block;}body>div>header ul.tabs li a:hover{float:left;border-top-left-radius:30px;border-top-right-radius:30px;-webkit-border-top-left-radius:30px;-webkit-border-top-right-radius:30px;-moz-border-radius-topleft:30px;-moz-border-radius-topright:30px;padding:10px 20px 0px 20px;height:38px;font:1.4em "dunkin",Tahoma,sans-serif;letter-spacing:1px;color:#ffffff;text-align:center;margin-right:2px;text-decoration:none;background-color:#c0c0c0;}
 .buttonsPanel{float:right;text-align:right;}
-body>div>article,.rcbcPIN{height:auto;clear:both;padding:10px;}body>div>article aside,.rcbcPIN aside,body>div>article .rcbcArticleAside,.rcbcPIN .rcbcArticleAside{width:25%;float:left;padding-right:10px;height:auto;display:block;}body>div>article aside ul.sideMenu,.rcbcPIN aside ul.sideMenu,body>div>article .rcbcArticleAside ul.sideMenu,.rcbcPIN .rcbcArticleAside ul.sideMenu{margin:0px;padding:0px;border:0px;list-style:none;}body>div>article aside ul.sideMenu li,.rcbcPIN aside ul.sideMenu li,body>div>article .rcbcArticleAside ul.sideMenu li,.rcbcPIN .rcbcArticleAside ul.sideMenu li{margin:0px;padding:0px;border:0px;}
-body>div>article aside ul.sideMenu a,.rcbcPIN aside ul.sideMenu a,body>div>article .rcbcArticleAside ul.sideMenu a,.rcbcPIN .rcbcArticleAside ul.sideMenu a{font-size:1.1em;display:block;padding:2px 0px 0px 10px;width:100%;height:29px;text-decoration:none;margin:0px 0px 8px 8px;color:#ffffff;}
-body>div>article aside ul.sideMenu a:hover,.rcbcPIN aside ul.sideMenu a:hover,body>div>article .rcbcArticleAside ul.sideMenu a:hover,.rcbcPIN .rcbcArticleAside ul.sideMenu a:hover{text-decoration:underline;}
+body>div>article,.rcbcPIN{height:auto;clear:both;padding:10px;}body>div>article aside,.rcbcPIN aside,body>div>article .rcbcArticleAside,.rcbcPIN .rcbcArticleAside{width:25%;float:left;padding-right:10px;height:auto;display:block;}body>div>article aside div.sideMenu ul,.rcbcPIN aside div.sideMenu ul,body>div>article .rcbcArticleAside div.sideMenu ul,.rcbcPIN .rcbcArticleAside div.sideMenu ul{margin:0px;padding:0px;border:0px;list-style:none;}body>div>article aside div.sideMenu ul li,.rcbcPIN aside div.sideMenu ul li,body>div>article .rcbcArticleAside div.sideMenu ul li,.rcbcPIN .rcbcArticleAside div.sideMenu ul li{margin:0px;padding:0px;border:0px;}body>div>article aside div.sideMenu ul li a,.rcbcPIN aside div.sideMenu ul li a,body>div>article .rcbcArticleAside div.sideMenu ul li a,.rcbcPIN .rcbcArticleAside div.sideMenu ul li a{font-size:1.1em;display:block;padding:2px 0px 0px 10px;width:100%;height:29px;text-decoration:none;margin:0px 0px 8px 8px;color:#ffffff;}
+body>div>article aside div.sideMenu ul li:hover,.rcbcPIN aside div.sideMenu ul li:hover,body>div>article .rcbcArticleAside div.sideMenu ul li:hover,.rcbcPIN .rcbcArticleAside div.sideMenu ul li:hover{text-decoration:underline;}
 body>div>article table.standard,.rcbcPIN table.standard{width:96%;}body>div>article table.standard th,.rcbcPIN table.standard th,body>div>article table.standard td,.rcbcPIN table.standard td{vertical-align:top;}
 body>div>article table.standard th.middle,.rcbcPIN table.standard th.middle,body>div>article table.standard td.middle,.rcbcPIN table.standard td.middle{vertical-align:middle;}
 body>div>article table.standard thead tr th,.rcbcPIN table.standard thead tr th,body>div>article table.standard thead tr td,.rcbcPIN table.standard thead tr td{vertical-align:bottom;}
@@ -32,7 +31,7 @@ body>div>article .articleContent,.rcbcPIN .articleContent,body>div>article .arti
 body>div>article .articleContent h2,.rcbcPIN .articleContent h2,body>div>article .articleContent-wide h2,.rcbcPIN .articleContent-wide h2{font-size:1.1em;}
 body>div>article .articleContent h3,.rcbcPIN .articleContent h3,body>div>article .articleContent-wide h3,.rcbcPIN .articleContent-wide h3{font-size:1.0em;}
 body>div>article .articleContent .indent,.rcbcPIN .articleContent .indent,body>div>article .articleContent-wide .indent,.rcbcPIN .articleContent-wide .indent{margin-left:20px;}
-body>div>article ul.sectionMenu,.rcbcPIN ul.sectionMenu{margin:0px;padding:0px;border:0px;list-style:none;display:block;color:#ffffff;font-family:"dunkin",Tahoma,sans-serif;text-transform:uppercase;}body>div>article ul.sectionMenu li,.rcbcPIN ul.sectionMenu li{margin:0px;padding:0px;border:0px;display:inline-block;margin:10px;text-align:center;float:left;}body>div>article ul.sectionMenu li a,.rcbcPIN ul.sectionMenu li a{color:#ffffff;width:189px;height:106px;border-top-left-radius:40px;border-top-right-radius:40px;-webkit-border-top-left-radius:40px;-webkit-border-top-right-radius:40px;-moz-border-radius-topleft:40px;-moz-border-radius-topright:40px;border-bottom-left-radius:40px;border-bottom-right-radius:40px;-webkit-border-bottom-left-radius:40px;-webkit-border-bottom-right-radius:40px;-moz-border-radius-bottomleft:40px;-moz-border-radius-bottomright:40px;display:inline-block;text-decoration:none;padding:10px;padding-top:20px;font-size:1.4em;}
+body>div>article .sectionMenu ul,.rcbcPIN .sectionMenu ul{margin:0px;padding:0px;border:0px;list-style:none;display:block;color:#ffffff;font-family:"dunkin",Tahoma,sans-serif;text-transform:uppercase;}body>div>article .sectionMenu ul li,.rcbcPIN .sectionMenu ul li{margin:0px;padding:0px;border:0px;display:inline-block;margin:10px;text-align:center;float:left;}body>div>article .sectionMenu ul li a,.rcbcPIN .sectionMenu ul li a{color:#ffffff;width:189px;height:106px;border-top-left-radius:40px;border-top-right-radius:40px;-webkit-border-top-left-radius:40px;-webkit-border-top-right-radius:40px;-moz-border-radius-topleft:40px;-moz-border-radius-topright:40px;border-bottom-left-radius:40px;border-bottom-right-radius:40px;-webkit-border-bottom-left-radius:40px;-webkit-border-bottom-right-radius:40px;-moz-border-radius-bottomleft:40px;-moz-border-radius-bottomright:40px;display:inline-block;text-decoration:none;padding:10px;padding-top:20px;font-size:1.4em;}
 body>div>article .contactTable,.rcbcPIN .contactTable,body>div>article .accessTable,.rcbcPIN .accessTable,body>div>article .serviceHoursTable,.rcbcPIN .serviceHoursTable,body>div>article .costTable,.rcbcPIN .costTable{width:513px;font-size:0.9em;border-collapse:collapse;}body>div>article .contactTable th,.rcbcPIN .contactTable th,body>div>article .accessTable th,.rcbcPIN .accessTable th,body>div>article .serviceHoursTable th,.rcbcPIN .serviceHoursTable th,body>div>article .costTable th,.rcbcPIN .costTable th{width:25%;border-right:1px solid #000000;border-bottom:1px solid #000000;}
 body>div>article .contactTable td,.rcbcPIN .contactTable td,body>div>article .accessTable td,.rcbcPIN .accessTable td,body>div>article .serviceHoursTable td,.rcbcPIN .serviceHoursTable td,body>div>article .costTable td,.rcbcPIN .costTable td{border-bottom:1px solid #000000;}
 body>div>article .contactTable td,.rcbcPIN .contactTable td,body>div>article .accessTable td,.rcbcPIN .accessTable td,body>div>article .serviceHoursTable td,.rcbcPIN .serviceHoursTable td,body>div>article .costTable td,.rcbcPIN .costTable td,body>div>article .contactTable th,.rcbcPIN .contactTable th,body>div>article .accessTable th,.rcbcPIN .accessTable th,body>div>article .serviceHoursTable th,.rcbcPIN .serviceHoursTable th,body>div>article .costTable th,.rcbcPIN .costTable th{padding:5px;vertical-align:top;text-align:left;}
@@ -44,34 +43,39 @@ body>div>article .p85,.rcbcPIN .p85{width:85%;}
 .dijitTextBox{border-width:2px !important;color:#6a6a6a !important;border-color:#6a6a6a !important;}
 .rcbcButtonPanelTooltipText{width:350px;color:#6a6a6a;background-color:#dddddd;padding:5px;}
 .family-services h1,.family-services h2,.family-services h3,.family-services h4,.family-services h5,.family-services h6{color:#bcd411;}
-.family-services ul li.activities-events a,.family-services.family-services li.activities-events a{background-color:#a823df;}
-.family-services ul li.health a,.family-services.family-services li.health a{background-color:#008cfb;}
-.family-services ul li.home-family a,.family-services.family-services li.home-family a{background-color:#ff7f00;}
-.family-services ul li.learning-training a,.family-services.family-services li.learning-training a{background-color:#ff1400;}
-.family-services ul li.leisure-sport a,.family-services.family-services li.leisure-sport a{background-color:#e9c32d;}
-.family-services ul li.me a,.family-services.family-services li.me a{background-color:#02a5ac;}
-.family-services ul li.work-money a,.family-services.family-services li.work-money a{background-color:#89b6c2;}
+.family-services div.family-services ul li.activities-events a{background-color:#8e36a3;}
+.family-services div.family-services ul li.childcare a{background-color:#8e36a3;}
+.family-services div.family-services ul li.health a{background-color:#008cfb;}
+.family-services div.family-services ul li.home-family a{background-color:#ff7f00;}
+.family-services div.family-services ul li.learning-training a{background-color:#ff1400;}
+.family-services div.family-services ul li.leisure-sport a{background-color:#e9c32d;}
+.family-services div.family-services ul li.me a{background-color:#02a5ac;}
+.family-services div.family-services ul li.work-money a{background-color:#89b6c2;}
 .family-services .dijitTextBox{border-color:#bcd411 !important;}
 .family-services .dijitTextBox:hover{background-color:#f6fbcf !important;}
 .family-services .dijitButtonNode{background-color:#f6fbcf !important;color:#bcd411 !important;border-color:#bcd411 !important;}
 .header.family-services{color:#bcd411;}
 .rcbcButtonPanelTooltipText.family-services{background-color:#f6fbcf;}
 .adult-services h1,.adult-services h2,.adult-services h3,.adult-services h4,.adult-services h5,.adult-services h6{color:#ee499b;}
-.adult-services ul li.about-care a,.adult-services.adult-services li.about-care a{background-color:#d776f9;}
-.adult-services ul li.leisure-sport a,.adult-services.adult-services li.leisure-sport a{background-color:#e9c32d;}
-.adult-services ul li.health-wellbeing a,.adult-services.adult-services li.health-wellbeing a{background-color:#1656da;}
-.adult-services ul li.money-benefits a,.adult-services.adult-services li.money-benefits a{background-color:#acb811;}
-.adult-services ul li.training-employment a,.adult-services.adult-services li.training-employment a{background-color:#ea9d45;}
-.adult-services ul li.housing-property a,.adult-services.adult-services li.housing-property a{background-color:#c1132e;}
-.adult-services ul li.help-to-live-at-home a,.adult-services.adult-services li.help-to-live-at-home a{background-color:#062d6e;}
-.adult-services ul li.transport a,.adult-services.adult-services li.transport a{background-color:#0bc6cd;}
+.adult-services div.adult-services ul li.about-care a{background-color:#d776f9;}
+.adult-services div.adult-services ul li.leisure-sport a{background-color:#e9c32d;}
+.adult-services div.adult-services ul li.health-wellbeing a{background-color:#1656da;}
+.adult-services div.adult-services ul li.money-benefits a{background-color:#acb811;}
+.adult-services div.adult-services ul li.training-employment a{background-color:#ea9d45;}
+.adult-services div.adult-services ul li.housing-property a{background-color:#c1132e;}
+.adult-services div.adult-services ul li.help-to-live-at-home a{background-color:#062d6e;}
+.adult-services div.adult-services ul li.transport a{background-color:#0bc6cd;}
 .adult-services .dijitTextBox{border-color:#ee499b !important;}
 .adult-services .dijitTextBox:hover{background-color:#f9bedb !important;}
 .adult-services .dijitButtonNode{background-color:#f9bedb !important;color:#ee499b !important;border-color:#ee499b !important;}
 .header.adult-services{color:#ee499b;}
 .rcbcButtonPanelTooltipText.adult-services{background-color:#fdecf5;}
-.activities-events h1{color:#a823df;}
+.activities-events h1{color:#8e36a3;}
 .activities-events ul.rcbcWidgetsServicListDisplayerServices{list-style-image:url("/pin.nsf/activities-events.gif");}
+.childcare h1{color:#8e36a3;}
+.childcare ul.rcbcWidgetsServicListDisplayerServices{list-style-image:url("/pin.nsf/childcare.gif");}
+.childcare .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv{background-color:#e9cfef;}.childcare .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv .rcbcPinExpandingDivTitle{color:#8e36a3;}
+.childcare .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv .rcbcPinExpandingDivInfo{color:#b45cc9;}
 .health h1{color:#008cfb;}
 .health ul.rcbcWidgetsServicListDisplayerServices{list-style-image:url("/pin.nsf/health.gif");}
 .health .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv{background-color:#e2f2ff;}.health .rcbcWidgetsServicListDisplayer .rcbcPinExpandingDiv .rcbcPinExpandingDivTitle{color:#008cfb;}
