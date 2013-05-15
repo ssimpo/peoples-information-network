@@ -2,6 +2,7 @@ syntax: glob
 .svn/
 scripts/release/
 sample/
+servicesStub.json
 services.json
 venues.json
 scroller.json
