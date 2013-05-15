@@ -6,4 +6,7 @@ scripts/dojo
 scripts/dojox
 scripts/dijit
 sample/
-*.json
+services.json
+venues.json
+scroller.json
+activitiesStub.json
