@@ -1,7 +1,7 @@
 var profile = {
 	basePath: "./",
     releaseDir: "release",
-	releaseName: "test",
+	releaseName: "live",
 	action: "release",
 	
 	layerOptimize: "shrinksafe",
