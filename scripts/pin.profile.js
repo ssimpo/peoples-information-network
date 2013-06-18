@@ -1,7 +1,7 @@
 var profile = {
 	basePath: "./",
     releaseDir: "release",
-	releaseName: "live",
+	releaseName: "tester",
 	action: "release",
 	
 	layerOptimize: "shrinksafe",
@@ -11,6 +11,15 @@ var profile = {
 	cssOptimize: "comments",
 	mini: false,
 	insertAbsMids: false,
+	
+	staticHasFeatures: {
+		"host-node": false,
+		"host-rhino": false,
+		"host-browser": undefined,
+		"dom": undefined,
+		"dojo-cdn": false,
+		"dojo-sniff": undefined
+	},
 	
 	packages: [
 		{ name: "lib", location :"lib" },
@@ -74,7 +83,9 @@ var profile = {
 				"dojo/dom-construct",
 				"dojo/dom-class",
 				"dojo/query",
-				"dojo/on"
+				"dojo/on",
+				"dojo/has",
+				"dojo/sniff"
 			]
         },
 		"rcbc/pin": {
@@ -129,33 +140,11 @@ var profile = {
 				"dojo/i18n",
 				"dojo/uacss",
 				"dojo/hccss",
-				"dojo/html"
+				"dojo/html",
+				"dojo/has",
+				"dojo/sniff"
 			]
 		},
-		"rcbc/domcore": {
-            include: [
-				"dojo/dom-attr",
-				"dojo/dom-construct",
-				"dojo/dom-class",
-				"dojo/query",
-				"dojo/on"
-			],
-			exclude: [
-				"dojo/dojo",
-				"dojo/_base/lang",
-				"dojo/_base/array",
-				"dojo/_base/declare",
-				"dijit/_WidgetBase",
-				"dijit/_TemplatedMixin",
-				"dijit/_WidgetsInTemplateMixin",
-				"dojo/parser",
-				"dijit/registry",
-				"dojo/i18n",
-				"dojo/uacss",
-				"dojo/hccss",
-				"dojo/html"
-			]
-        },
 		"dojo/dojo": {
             include: [
 				"dojo/dojo",
@@ -170,7 +159,9 @@ var profile = {
 				"dojo/i18n",
 				"dojo/uacss",
 				"dojo/hccss",
-				"dojo/html"
+				"dojo/html",
+				"dojo/has",
+				"dojo/sniff"
 			],
 			customBase: true,
             boot: true
